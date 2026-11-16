@@ -1,0 +1,432 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0b16;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* NAVIGATION */
+
+header {
+    background-color: #111122;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #a78bfa;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* HOME SECTION */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #0b0b16, #21113d);
+}
+
+.hero-content {
+    max-width: 650px;
+    flex: 1;
+}
+
+.hero-content .intro {
+    color: #a78bfa;
+    font-size: 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.hero h3 {
+    color: #a78bfa;
+    margin-bottom: 20px;
+}
+
+
+/* PROFILE IMAGE */
+
+.hero-image {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #8b5cf6;
+    box-shadow: 0 0 35px rgba(139, 92, 246, 0.4);
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 60%;
+}
+
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    background-color: #8b5cf6;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #6d28d9;
+    transform: translateY(-3px);
+}
+
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #a78bfa;
+    margin-bottom: 30px;
+}
+
+.section > p {
+    max-width: 850px;
+    margin: auto;
+}
+
+
+/* SKILLS */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background-color: #1b1b32;
+    border: 1px solid #7045c4;
+    padding: 20px 35px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #6d28d9;
+    transform: translateY(-5px);
+}
+
+
+/* PROJECTS */
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #17172b;
+    border: 1px solid #30264a;
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #a78bfa;
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #a78bfa;
+    margin-bottom: 10px;
+}
+
+
+/* CONTACT FORM */
+
+#contactForm {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 15px;
+    border: 1px solid #40345e;
+    border-radius: 8px;
+    background-color: #17172b;
+    color: white;
+    font-size: 15px;
+}
+
+#contactForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: 2px solid #8b5cf6;
+}
+
+#formMessage {
+    margin-top: 20px;
+    color: #a78bfa;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #111122;
+    text-align: center;
+    padding: 25px;
+    color: #aaaaaa;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #111122;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-image {
+        width: 240px;
+        height: 240px;
+    }
+
+    .section {
+        padding: 60px 7%;
+    }
+
+}
+
+
+/* ANIMATION */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* HOME ANIMATION */
+
+.hero-content {
+    animation: fadeIn 1s ease;
+}
+
+.hero-image {
+    animation: fadeIn 1.3s ease;
+}
+
+/* SCROLL ANIMATION */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* PROJECTS IMPROVEMENT */
+
+.section-description {
+    color: #bbbbcc;
+    margin-bottom: 35px;
+}
+
+.project-card {
+    text-align: left;
+    min-height: 230px;
+    background: linear-gradient(145deg, #1c1b35, #111122);
+    border: 1px solid #493475;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.project-tag {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 6px 12px;
+    background: #30204e;
+    color: #c4a8ff;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    opacity: 0.8;
+}
+
+/* Light Mode */
+body.light-mode {
+    background: #f5f5ff;
+    color: #222;
+}
+
+body.light-mode header,
+body.light-mode nav {
+    background: #ffffff;
+}
+
+body.light-mode section {
+    background: #f5f5ff;
+    color: #222;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode p {
+    color: #222;
+}
+
+body.light-mode .project-card,
+body.light-mode .skill-card {
+    background: #ffffff;
+    color: #222;
+    border-color: #8b5cf6;
+}
+
+body.light-mode input,
+body.light-mode textarea {
+    background: #ffffff;
+    color: #222;
+    border-color: #ccc;
+}
+
+body.light-mode input::placeholder,
+body.light-mode textarea::placeholder {
+    color: #777;
+}

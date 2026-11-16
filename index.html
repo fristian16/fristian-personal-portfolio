@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fristian | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">MyPortfolio</h2>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+
+        </nav>
+        <button id="theme-toggle" class="theme-toggle">
+    ☀️ Light Mode
+</button>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="intro">Hello, I'm</p>
+
+            <h1>Fristian Purwa Putra Pratama</h1>
+
+            <h3>Computer Science Student</h3>
+
+            <p>
+                Welcome to my personal portfolio.
+                I am a Computer Science student passionate
+                about technology, programming, and web development.
+                I enjoy learning new skills and creating digital projects.
+            </p>
+
+            <a href="#projects" class="btn">View My Work</a>
+
+        </div>
+
+        <!-- Profile Image -->
+        <div class="hero-image">
+
+            <img src="images/profile.jpg"
+                 alt="Fristian Purwa Putra Pratama">
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+
+        <h2>About Me</h2>
+
+        <p>
+            My name is Fristian Purwa Putra Pratama.
+            I am a Computer Science student interested
+            in technology, programming, and web development.
+            I enjoy learning new skills and creating digital projects.
+        </p>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+
+        </div>
+
+    </section>
+
+
+    
+<!-- Projects Section -->
+<section id="projects" class="section">
+
+    <h2>My Projects</h2>
+
+    <p class="section-description">
+        Here are some of the projects I have created
+        while learning programming and web development.
+    </p>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <div class="project-icon">🌐</div>
+            <h3>My First Website</h3>
+            <p>
+                My first website project created using
+                HTML and CSS to learn web development.
+            </p>
+            <span class="project-tag">HTML & CSS</span>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">💻</div>
+            <h3>Personal Portfolio</h3>
+            <p>
+                A personal portfolio website designed
+                to introduce myself and showcase my skills.
+            </p>
+            <span class="project-tag">HTML, CSS & JavaScript</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+
+            <input type="text"
+                   placeholder="Your Name"
+                   required>
+
+            <input type="email"
+                   placeholder="Your Email"
+                   required>
+
+            <textarea placeholder="Your Message"
+                      required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+        <p id="formMessage"></p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Fristian Purwa Putra Pratama.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
